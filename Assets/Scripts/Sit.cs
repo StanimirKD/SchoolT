@@ -107,5 +107,6 @@ public class Sit : MonoBehaviour
         }
     void OnApplicationQuit() {
         PlayerPrefs.SetInt("Standing", 1);
+        
     }
     }

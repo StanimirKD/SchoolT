@@ -11,8 +11,9 @@ public class CopyText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(PlayerPrefs.GetString("Text", ""));
         Screen.lockCursor = true;
-
+        input.GetComponent<TMP_InputField>().text = PlayerPrefs.GetString("Text", "");
     }
 
     // Update is called once per frame
@@ -20,4 +21,11 @@ public class CopyText : MonoBehaviour
     {
       whiteboard.GetComponent<TextMeshPro>().text=input.GetComponent<TMP_InputField>().text;
     }
+    void OnApplicationQuit()
+    {
+      
+        PlayerPrefs.SetString("Text", whiteboard.GetComponent<TextMeshPro>().text);
+       // Debug.Log(PlayerPrefs.GetString("Text", ""));
+    }
+
 }

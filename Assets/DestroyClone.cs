@@ -15,7 +15,10 @@ public class DestroyClone : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            Destroy(gameObject);
+            if (PlayerPrefs.GetInt("drawing", 0) == 1)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

@@ -57,8 +57,8 @@ public class Draw : MonoBehaviour
                 inview = false;
                 Camera1.SetActive(true);
                 Canvas.SetActive(false);
-              
-               
+                PlayerPrefs.SetInt("drawing", 0);
+
             }
         }
     }
@@ -67,6 +67,7 @@ public class Draw : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
+            PlayerPrefs.SetInt("drawing", 1);
             Screen.lockCursor = false;
             inview = true;
             Camera1.SetActive(false);

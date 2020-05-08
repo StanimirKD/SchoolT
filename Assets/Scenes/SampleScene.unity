@@ -482,6 +482,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.152628, y: 2.8470564, z: 2.337957}
   m_Center: {x: 0.042909794, y: 0.92352766, z: 0.16052373}
+--- !u!114 &476138177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476138173}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cb04fccddfb01e4dbf945c15b4d0e69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Character: {fileID: 4425428724316497657}
+  anim: {fileID: 0}
+  chair: {fileID: 0}
 --- !u!1 &504465407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,7 +1621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Character: {fileID: 4425428724316497657}
   anim: {fileID: 0}
-  inview: 0
+  chair: {fileID: 0}
 --- !u!1 &2092704812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1669,20 +1684,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Textile_chair
       objectReference: {fileID: 0}
+    - target: {fileID: 68193045690405339, guid: 3083017f4fc1f4f95a3b2bb80eabe71b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chair
+      objectReference: {fileID: 0}
     - target: {fileID: 6699098400104526748, guid: 3083017f4fc1f4f95a3b2bb80eabe71b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.617
+      value: 42.607
       objectReference: {fileID: 0}
     - target: {fileID: 6699098400104526748, guid: 3083017f4fc1f4f95a3b2bb80eabe71b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.04
+      value: 0.002
       objectReference: {fileID: 0}
     - target: {fileID: 6699098400104526748, guid: 3083017f4fc1f4f95a3b2bb80eabe71b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.986
+      value: 27.973
       objectReference: {fileID: 0}
     - target: {fileID: 6699098400104526748, guid: 3083017f4fc1f4f95a3b2bb80eabe71b,
         type: 3}
@@ -1727,17 +1747,47 @@ PrefabInstance:
     - target: {fileID: 6699098400104526748, guid: 3083017f4fc1f4f95a3b2bb80eabe71b,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.54936
+      value: 0.29514256
       objectReference: {fileID: 0}
     - target: {fileID: 6699098400104526748, guid: 3083017f4fc1f4f95a3b2bb80eabe71b,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.54936
+      value: 0.29514256
       objectReference: {fileID: 0}
     - target: {fileID: 6699098400104526748, guid: 3083017f4fc1f4f95a3b2bb80eabe71b,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.54936
+      value: 0.29514256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7025812926697237163, guid: 3083017f4fc1f4f95a3b2bb80eabe71b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.011764
+      objectReference: {fileID: 0}
+    - target: {fileID: 7025812926697237163, guid: 3083017f4fc1f4f95a3b2bb80eabe71b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.1455
+      objectReference: {fileID: 0}
+    - target: {fileID: 7025812926697237163, guid: 3083017f4fc1f4f95a3b2bb80eabe71b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.14569
+      objectReference: {fileID: 0}
+    - target: {fileID: 7025812926697237163, guid: 3083017f4fc1f4f95a3b2bb80eabe71b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 101.10781
+      objectReference: {fileID: 0}
+    - target: {fileID: 7025812926697237163, guid: 3083017f4fc1f4f95a3b2bb80eabe71b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 101.10781
+      objectReference: {fileID: 0}
+    - target: {fileID: 7025812926697237163, guid: 3083017f4fc1f4f95a3b2bb80eabe71b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 101.10781
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3083017f4fc1f4f95a3b2bb80eabe71b, type: 3}
@@ -3758,14 +3808,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4425428724316497657}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cb04fccddfb01e4dbf945c15b4d0e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Character: {fileID: 4425428724316497657}
   anim: {fileID: 4425428724316497662}
-  inview: 0
+  chair: {fileID: 476138173}
 --- !u!1 &4425428724326658459
 GameObject:
   m_ObjectHideFlags: 0
