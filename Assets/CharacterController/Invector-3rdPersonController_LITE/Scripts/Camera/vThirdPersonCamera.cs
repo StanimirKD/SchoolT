@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class vThirdPersonCamera : MonoBehaviour
 {
+    private bool mode = false;
     #region inspector properties    
 
     public Transform target;
@@ -37,6 +38,7 @@ public class vThirdPersonCamera : MonoBehaviour
     [HideInInspector]
     public Vector2 movementSpeed;
 
+   
     private Transform targetLookAt;
     private Vector3 currentTargetPos;
     private Vector3 lookPoint;
@@ -89,6 +91,25 @@ public class vThirdPersonCamera : MonoBehaviour
         if (target == null || targetLookAt == null) return;
 
         CameraMovement();
+
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown("k"))
+        {
+            if (mode == false)
+            {
+                defaultDistance = -1.67f;
+                height = 3.05f;
+                mode = true;
+            }
+            else
+            {
+                defaultDistance = 1.61f;
+                height = 1.93f;
+                mode = false;
+            }
+        }
     }
 
     /// <summary>

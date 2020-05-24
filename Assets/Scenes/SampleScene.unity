@@ -681,18 +681,33 @@ PrefabInstance:
     - target: {fileID: 2700874171910072505, guid: 330efb0e9eed825408809c121441b8a5,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.32052004
+      value: 0.32052013
       objectReference: {fileID: 0}
     - target: {fileID: 2700874171910072507, guid: 330efb0e9eed825408809c121441b8a5,
         type: 3}
       propertyPath: defaultDistance
-      value: 2.52
+      value: 1.61
       objectReference: {fileID: 0}
     - target: {fileID: 2700874171910072507, guid: 330efb0e9eed825408809c121441b8a5,
         type: 3}
       propertyPath: height
       value: 1.93
       objectReference: {fileID: 0}
+    - target: {fileID: 2700874171910072507, guid: 330efb0e9eed825408809c121441b8a5,
+        type: 3}
+      propertyPath: smoothCameraRotation
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2700874171910072507, guid: 330efb0e9eed825408809c121441b8a5,
+        type: 3}
+      propertyPath: lockCamera
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2700874171910072507, guid: 330efb0e9eed825408809c121441b8a5,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 4425428724316497663}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 330efb0e9eed825408809c121441b8a5, type: 3}
 --- !u!1 &651274098
@@ -3733,7 +3748,7 @@ MonoBehaviour:
   rotateByWorld: 0
   useContinuousSprint: 1
   sprintOnlyFree: 1
-  locomotionType: 0
+  locomotionType: 1
   freeSpeed:
     movementSmooth: 6
     animationSmooth: 0.2
@@ -3765,7 +3780,7 @@ MonoBehaviour:
     m_Bits: 1
   groundMinDistance: 0.25
   groundMaxDistance: 0.5
-  slopeLimit: 45
+  slopeLimit: 48.7
 --- !u!95 &4425428724316497662
 Animator:
   serializedVersion: 3
@@ -3792,9 +3807,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4425428724316497657}
-  m_LocalRotation: {x: -0, y: -1, z: 0, w: -0.0000001872535}
+  m_LocalRotation: {x: -1.1641531e-10, y: -1, z: -0, w: -0.00000018766147}
   m_LocalPosition: {x: 46.69493, y: 11.375999, z: 33.021774}
-  m_LocalScale: {x: 1.1653466, y: 1.1653466, z: 1.1653466}
+  m_LocalScale: {x: 1.165348, y: 1.1653467, z: 1.165348}
   m_Children:
   - {fileID: 4425428724739027771}
   - {fileID: 4425428724396687466}
