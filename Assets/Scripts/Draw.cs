@@ -5,6 +5,7 @@ using UnityEngine;
 public class Draw : MonoBehaviour
 {
      public GameObject Camera1;
+    public GameObject Camera2;
     public GameObject Canvas;
     public GameObject Character;
     public GameObject Brush;
@@ -55,7 +56,9 @@ public class Draw : MonoBehaviour
                 inview = false;
                 Screen.lockCursor = true;
                 inview = false;
+                Camera2.SetActive(true);
                 Camera1.SetActive(true);
+                
                 Canvas.SetActive(false);
                 PlayerPrefs.SetInt("drawing", 0);
 
@@ -70,6 +73,7 @@ public class Draw : MonoBehaviour
             PlayerPrefs.SetInt("drawing", 1);
             Screen.lockCursor = false;
             inview = true;
+            Camera2.SetActive(false);
             Camera1.SetActive(false);
             Canvas.SetActive(true);
             Character.SetActive(false);

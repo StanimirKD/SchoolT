@@ -5,7 +5,7 @@ using UnityEngine;
 public class Sit : MonoBehaviour
 {
     public GameObject Character;
-    public Animator anim;
+     Animator anim;
     public GameObject chair;
 
 
@@ -22,15 +22,23 @@ public class Sit : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("Standing", 0) == 1)
         {
-            if (collision.gameObject.tag == "Chair")
+            if (collision.gameObject.tag == "Player")
             {
                 Character.transform.position = chair.transform.position;
-                Character.transform.position += Vector3.up * 0.1f;
-                Character.transform.position += Vector3.forward * 0.1f;
+               Character.transform.position += Vector3.down * 0.5f;
+               Character.transform.position += Vector3.back * 0.25f;
+                Character.transform.position += Vector3.right * 0.2f;
                 Character.GetComponent<Rigidbody>().isKinematic = true;
                 PlayerPrefs.SetInt("Standing", 0);
                 Debug.Log("Hey, hey");
                 anim.SetBool("isSit", true);
+                if (chair.name == "chair0")
+                {
+                   
+                    Character.transform.position += Vector3.forward * 0.55f;
+                    Character.transform.position += Vector3.left * 0.3f;
+                    Debug.Log("yep");
+                }
                 {
                     //Start the coroutine we define below named ExampleCoroutine.
                     StartCoroutine(ExampleCoroutine());
@@ -79,7 +87,7 @@ public class Sit : MonoBehaviour
           {
             if (Input.GetKeyDown("space"))
             {
-                Character.transform.position = new Vector3(42, 1, 30);
+                Character.transform.position = new Vector3(47, 1, 33);
                 {
                     //Start the coroutine we define below named ExampleCoroutine.
                     StartCoroutine(ExampleCoroutine());
